@@ -9,8 +9,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Show project
+      run: ls -a
     - name: Move to cargo project
-      run: cd rust-cargo
+      run: cd rust-cargo/
     - name: Build
       run: cargo build --verbose
     - name: Run tests
