@@ -17,10 +17,11 @@ on:
         required: false
         type: string
 
-workflow_run:
-  workflows: ["Test and Lint"]
-  types: 
-    - completed
+  workflow_run:
+    workflows: ["Test and Lint"]
+    branches: ["master"]
+    types: 
+      - completed
 
 jobs:
   build:
