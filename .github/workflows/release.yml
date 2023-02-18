@@ -35,4 +35,4 @@ jobs:
     - name: Move to cargo project and Build
       run: cd rust-cargo/ && cargo build --verbose --release
     - name: push
-      run: git add . && git commit -m ${inputs.tag}}
+      run: git add . && git commit -m ${{ inputs.tag }}
