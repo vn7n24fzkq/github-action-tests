@@ -11,7 +11,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Show project
       run: ls -a
-    - name: Move to cargo project
-      run: cd rust-cargo/
-    - name: Run tests
-      run: cargo test --verbose
+    - name: Move to cargo project and Run tests
+      run: cd rust-cargo/ && cargo test --verbose
